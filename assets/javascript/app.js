@@ -121,5 +121,62 @@ $(document).ready(function() {
             }
         }
     }
+
+    var timeToAnswer = 10;
+    var chosenQuestion = "";
+    var correctAnswers = 0;
+    var incorrectAnswers = 0;
+    var unanswered = 0;
+    var timerId = 0;
+
+    function countdown() {
+
+        if (timeToAnswer == 0) {
+            
+            clearTimeout(timerId);
+            $('#time').find('h3').text("Time Remaining: " + 0);
+            //doSomething();
+
+        } else {
+            
+            var divTime = $('#time').find('h3');
+            divTime.text("Time Remaining: " + timeToAnswer);
+            timeToAnswer = timeToAnswer - 1;
+        }
+    }
+
+    function getOptionDiv (id) {
+
+        var div = $("#"+id).find('h3');
+        return div;
+    }
+
+    function restartGame () {
+
+        var timeToAnswer = 60;
+        var chosenQuestion = "";
+        var correctAnswers = 0;
+        var incorrectAnswers = 0;
+        var unanswered = 0;
+        var timerId = 0;
+
+        $('#start-again').hide();
+    }
+
+    //$('.option').hover(function(){$(this).toggleClass('option_hover');});
+
+    /*$(document).on("click", "#start-again", function() {
+
+    })*/
+
+    $(document).on("click", "#start", function() {
+
+        $('#start').hide();
+
+        timerId = setInterval(countdown, 1000);
+
+
+
+    })
 });
 

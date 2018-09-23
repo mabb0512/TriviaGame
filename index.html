@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
 </head>
 <body>
@@ -22,7 +23,21 @@
             <div class="col-2"></div>
             <div class="col-8" >
                     <div class="jumbotron">
-                        <button class="btn btn-dark btn-lg btn-block button">Start Game!</button>
+                        <button id="start" class="btn btn-dark btn-lg btn-block button">Start Game!</button>
+                        <div id="game" class="center">
+                            <div id="time"><h3></h3></div>
+                            <div id="question" class="option"><h3></h3></div>
+                            <div id="message"></div>
+                            <div id="correct-score"></div>
+                            <div id="incorrect-score"></div>
+                            <div id="unanswered-score"></div>
+                            <div id="correct-answer"><h3></h3></div>
+                            <div id="a" class="option"><h3></h3></div>
+                            <div id="b" class="option"><h3></h3></div>
+                            <div id="c" class="option"><h3></h3></div>
+                            <div id="d" class="option"><h3></h3></div>
+                        </div>
+                        <button id="start-again" class="btn btn-dark btn-lg btn-block button">Start Again?</button>
                     </div>
             </div>
         </div>

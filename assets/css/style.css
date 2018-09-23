@@ -16,3 +16,20 @@ body {
 .jumbotron {
     background-color: #D2D3D5;
 }
+
+.center {
+    text-align: center;
+    font-weight: bold;
+}
+
+.option_hover { 
+    background-color: #ABCD38; 
+}
+
+.option { 
+    color: white; 
+}
+
+#start-again {
+    display: none;
+}
