@@ -1,0 +1,18 @@
+.bg-1 { 
+    background-color: #32B9E6;
+    color: #ffffff;
+}
+
+body {
+    background-image: url("../images/triathlon-bg.jpg");
+}
+
+.button {
+    background-color: #E71D29;
+    border: none;
+    color: white;
+}
+
+.jumbotron {
+    background-color: #D2D3D5;
+}
