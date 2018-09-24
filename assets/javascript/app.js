@@ -123,8 +123,8 @@ $(document).ready(function() {
         }
     }
 
-    var timeToAnswer = 10;
-    var chosenQuestion = 9;
+    var timeToAnswer = 30;
+    var chosenQuestion = 1;
     var correctAnswers = 0;
     var incorrectAnswers = 0;
     var unanswered = 0;
@@ -205,7 +205,7 @@ $(document).ready(function() {
 
         $('#message').hide();
         $('#correct-answer').hide();
-        timeToAnswer = 10;
+        timeToAnswer = 30;
         timerId = setInterval(countdown, 1000);
         setTimeout (function () {
 
@@ -243,7 +243,7 @@ $(document).ready(function() {
 
     function restartGame () {
 
-        timeToAnswer = 60;
+        timeToAnswer = 30;
         chosenQuestion = 1;
         correctAnswers = 0;
         incorrectAnswers = 0;
