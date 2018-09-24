@@ -33,3 +33,12 @@ body {
 #start-again {
     display: none;
 }
+
+.red-text {
+
+    color: red;
+}
+
+#question {
+    color: black;
+}
