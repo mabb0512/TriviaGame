@@ -159,6 +159,7 @@ $(document).ready(function() {
                 $('#choices').hide();
 
                 chosenQuestion = chosenQuestion + 1;
+                setQuestion();
 
             }, 5000);
 
